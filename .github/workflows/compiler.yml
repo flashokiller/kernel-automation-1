@@ -16,12 +16,12 @@ on:
     
 
 env:
-  KERNEL_SOURCE: https://github.com/ManOfDiamond/kernel_xiaomi_ysl.git
-  BRANCH: stx
+  KERNEL_SOURCE: https://GitHub.com/flashokiller/flasho_Ysl
+  BRANCH: MaD
   DEFCONFIG: ysl-perf_defconfig
   TZ: Asia/Kolkata
   MIR: wet
-  TOOLCHAIN: https://github.com/mscalindt/aarch64-linux-android-4.9.git
+  TOOLCHAIN: https://github.com/kdrag0n/proton-clang --depth=1 -j8
   ARCH: arm64
   SUBARCH: arm64
   FOLDERNAME: kernel-automation
@@ -63,4 +63,4 @@ jobs:
          run: |
             cd work/arch/arm64/boot
             curl -sL https://git.io/file-transfer | sh
-            ./transfer $MIR Image.gz-dtb
+            ./transfer $MIR 
